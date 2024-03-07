@@ -34,7 +34,7 @@ function loginUserMessage(username = "sam") {
 }
 
 //console.log(loginUserMessage("aklanta"));
-console.log(loginUserMessage(""));
+//console.log(loginUserMessage(""));
 
 function loginUserMessage2(username = "sam") {
     if(username === undefined) {
@@ -43,4 +43,39 @@ function loginUserMessage2(username = "sam") {
     }
     return `${username} just logged in`;
 }
-console.log(loginUserMessage("aklanta"));
+// console.log(loginUserMessage("aklanta"));
+
+
+function calculateCartPrice(...num1){
+    return num1
+}
+
+//console.log(calculateCartPrice(200,400,500));
+
+
+const user = {
+    username:"aklanta",
+    price: 199
+}
+
+function handleObject(anyobect) {
+    console.log(`Username is ${anyobect.username} and price is ${anyobect.price}`);
+}
+
+// handleObject(user)
+
+handleObject({
+    username: "sam",
+    price: 199
+})
+
+const myNewArray = [200,300,100,800]
+
+function returnSecondValue(getArray) {
+    return getArray[1]
+}
+
+// console.log(returnSecondValue(myNewArray));
+console.log(returnSecondValue([200,300,100,800]));
+
+
